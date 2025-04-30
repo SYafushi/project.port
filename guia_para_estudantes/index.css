@@ -1,0 +1,86 @@
+
+
+header{
+    background-color: #2f9e41;
+    height: 3em;
+    max-width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: left;
+    background-color: rgb(237, 237, 248);
+    margin: 0;
+    padding: 0;
+
+}
+
+.map-buttons {
+    margin: 20px;
+}
+
+.map-buttons button {
+    padding: 8px 10px;
+    background-color: #2f9e41;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+/*Container principal*/
+#map-container {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #4d4d4d;
+}
+
+/*Imagem do mapa*/
+#map-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Blocos -> para clicar */
+.hotspot {
+    position: absolute;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#info-box {
+    position:fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: 2px solid #2f9e41;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    max-width: 100%;
+    max-height: 20px;
+    z-index: 1000;
+    transform: translate(-50%, -100%); /* Posiciona acima do cursor */
+    transition: opacity 0.1s, background 0.1s; /* Adiciona transição suave */
+    opacity: 0; /* Sempre visível, mas pode ficar transparente */
+}
+
+#info-box.active {
+    opacity: 1;
+    background: rgba(207, 206, 206, 0.856); /* Fundo mais transparente */
+    color: black;
+}
+
+#info-box.inactive {
+    opacity: 0; /* Transparência quando inativa */
+}
