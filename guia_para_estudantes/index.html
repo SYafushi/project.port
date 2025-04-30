@@ -12,10 +12,10 @@
 
 <body>
 
-    <h1 style="text-align: center; margin: 20px auto; width: 80%;">Guia para os calouros da IFSP Câmpus Birigui</h1>
-    <h2 style='text-align: center'>Mapa da IFSP</h2>
+    <h1 style="text-align: center; font-size: xxx-large; margin: 20px auto; width: 80%;">Guia para os calouros da IFSP Câmpus Birigui</h1>
+    <h2 style="text-align: center; font-size: xx-large; color: #cd191e">Mapa da IFSP</h2>
     
-    <div style='text-align: left; padding-left:17.5%;' class="map-buttons">
+    <div class="map-buttons">
         <button onclick="changeMap('mapa_modo1.jpg')">Modo 1</button>
         <button onclick="changeMap('mapa_modo2.jpg')">Modo 2</button>
     </div>
@@ -221,17 +221,21 @@
 
     <div id="modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 999;"></div>
 
-    <h3>Lista de avisos:</h3>
-    <ul id="avisos-lista" style="list-style-type: none; padding-left: 1;">
-        <li>▶Verifique se você já terminou seu cadastro para criar seu <strong>e-mail institucional;</strong>.</li>
-        <li>▶<strong>As aulas de tarde começam às 13h30</strong> (no SUAP está adiantado);</li>
-        <li>▶Verifique o calendário de aulas, <strong>existe sábados letivos</strong>;</li>
-        <li>▶Cada professor tem sua própria maneira de mandar os <strong>materiais de aula</strong>, por exemplo (para os alunos de Engenharia de Computação do primeiro semestre de 2025):</li>
-        <ul>
-            <li>A professora Livia, de cálculo, disponibiliza os slides que usa em suas aulas no SUAP;</li>
-            <li>A professora Natalia, de química, disponibiliza os slides que usa em suas aulas no MOODLE.</li>
+    <div class="quadro">
+        <h3 style="font-size: x-large">Lista de avisos:</h3>
+    
+        <ul id="avisos-lista" style="list-style-type: none; padding: center; font-size: large;">
+            <li>▶Verifique se você já terminou seu cadastro para criar seu <strong>e-mail institucional;</strong>.</li>
+            <li>▶<strong>As aulas de tarde começam às 13h30</strong> (no SUAP está atrasado);</li>
+            <li>▶Verifique o calendário de aulas, <strong>existem sábados letivos</strong>;</li>
+            <li>▶Cada professor tem sua própria maneira de mandar os <strong>materiais de aula</strong>, por exemplo (para os alunos de Engenharia de Computação do primeiro semestre de 2025):</li>
+            <ul>
+                <li>A professora Lívia, de cálculo, disponibiliza os slides que usa em suas aulas no SUAP;</li>
+                <li>A professora Natália, de química, disponibiliza os slides que usa em suas aulas no MOODLE.</li>
+            </ul>
+            <li>▶Para logar no wifi institucional, coloque seu <strong>BI</strong> completo com "bi" minúsculo. Caso não funcione, verifique em uma das salas de informática se seu BI está registrado no sistema do seu câmpus.</li>
+            <li>▶A frequência (presença) <strong>mínima</strong> para aprovação nas disciplinas (por semestre) é: 75%</li>
         </ul>
-        <li>▶Para logar no wifi institucional, coloque seu <strong>BI</strong> completo com "bi" minúsculo. Caso não funcione, verifique em uma das salas de informática se seu BI está registrado no sistema do seu câmpus.</li>
-    </ul>
+    </div>
 </body>
 </html>
