@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<header></header>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia para os estudantes</title>
     <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
+    <header></header>
 
-    <h1 style="text-align: center; font-size: xxx-large; margin: 20px auto; width: 80%;">Guia para os calouros da IFSP Câmpus Birigui</h1>
-    <h2 style="text-align: center; font-size: xx-large; color: #cd191e">Mapa da IFSP</h2>
+    <h1>Guia para os calouros da IFSP Câmpus Birigui</h1>
+    <h2>Mapa da IFSP</h2>
     
     <div class="map-buttons">
         <button onclick="changeMap('mapa_modo1.jpg')">Modo 1</button>
@@ -23,219 +20,123 @@
     <div id="map-container">
         <img id="map-image" src="mapa_modo1.jpg" alt="Mapa IFSP">
         
-        <!-- Hotspot de exemplo (coordenadas em porcentagem) -->
+        <!-- Hotspots -->
         <div class="hotspot" 
-             data-descricao="Entrada"
-             data-details="
-                  <p><strong>Para passar pelas catracas coloque seu BI</strong></p>
-                  <p style='text-align: left; padding-left:20px;'>Aperte a seta para cima ao entrar</p>
-                  <p style='text-align: left; padding-left:20px;'>Aperte a seta para baixo ao sair</p>"
-             style="top: 72%; left: 31.5%; width: 2.99%; height: 3%;">
+            data-descricao="Entrada" 
+            data-details="<p><strong>Para passar pelas catracas coloque seu BI</strong> (os números que vêm acompanhados por 'BI')</p>
+                <ul style='text-align: left; padding-left:45px;'>
+                    <li>Pode ser encontrado no <strong>SUAP</strong>;</li>
+                    <li>Também é incentivado os alunos a verificarem os e-mails antecipadamente enviados pela instituição em sua conta Pessoal.</li>
+                </ul>"            
+            data-images="img/entrada_1.jpg, img/entrada_2.jpg, img/entrada_3.jpg"
+            style="top: 72%; left: 31.5%; width: 4%; height: 4%;">
         </div>
 
         <div class="hotspot" 
             data-descricao="Quadra"
-            data-details="
-                <p><strong>Local para praticar atividades esportivas</strong></p>
-                <p>O arranjo e a devolução dos equipamentos esportivos devem ser feitos no CAE</p>"
-            style="top: 45%; left: 19%; width: 8.5%; height: 8%;
-                transform: rotate(45deg);
-                transform-origin: center;">
+            data-details="<p><strong>Local para praticar atividades esportivas</strong></p><p>O arranjo e a devolução dos equipamentos esportivos devem ser feitos no CAE</p>"
+            data-images="img/quadra_1.jpg, img/quadra_2.jpg, img/quadra_3.jpg"
+            style="top: 45%; left: 19%; width: 8.5%; height: 9%; transform: rotate(46deg); transform-origin: center;">
         </div>
         
         <div class="hotspot" 
             data-descricao="Refeitório"
-            data-details="
-                <ul style='text-align: left; padding-left:20px;'>
-                    <li><strong>Prato feito:</strong> R$ 13,40
-                        <p>1 mistura</p></li>
-                    <li><strong>Prato Especial:</stong> R$ 16,00
-                        <p>2 misturas</p></li>
-                    <li><strong>Marmitex:</stong> R$ 16,00
-                        <p>2 misturas</p>
-                        <p>Tamanho único</p></li>
-                </ul>"
-            style="top: 15.6%; left: 18.9%; width: 11%; height: 9.2%;">
+            data-details="<ul style='text-align: left; padding-left:20px;'><li><strong>Prato feito:</strong> R$ 13,40<p>1 mistura</p></li><li><strong>Prato Especial:</strong> R$ 16,00<p>2 misturas</p></li><li><strong>Marmitex:</strong> R$ 16,00<p>2 misturas</p><p>Tamanho único</p></li></ul>"
+            data-images="img/refeitorio_1.jpg, img/refeitorio_2.jpg, img/refeitorio_3.jpg, img/refeitorio_4.jpg"
+            style="top: 15.6%; left: 18.9%; width: 11.4%; height: 9.2%;">
         </div>
 
         <div class="hotspot" 
             data-descricao="Bloco de Administração"
-            data-details="
-                <ul style='text-align: left; padding-left:35px;'>
-                    <li><strong>DRG</strong></li>
-                    <li><strong>CRA</strong> (Coordenadoria de Apoio ao Ensino)</li>
-                    <li><strong>DAE</strong></li>
-                    <li><strong>CTI</strong></li>
-                </ul>"
-            style="top: 46%; left: 38%; width: 12%; height: 10.5%;
-                transform: rotate(136deg);
-                transform-origin: center;">
+            data-details="<ul style='text-align: left; padding-left:35px;'><li><strong>DRG</strong></li><li><strong>CRA</strong> (Coordenadoria de Apoio ao Ensino)</li><li><strong>DAE</strong></li><li><strong>CTI</strong></li></ul>"
+            data-images="img/bloco_adm1.jpg, img/bloco_adm2.jpg, img/bloco_adm3.jpg, img/bloco_adm4.jpg"
+            style="top: 46%; left: 38%; width: 12%; height: 10.5%; transform: rotate(136deg); transform-origin: center;">
         </div>
 
         <div class="hotspot" 
             data-descricao="Bloco E"
-            data-details="
-                <ul style='text-align: left; padding-left:35px;'>
-                    <li>E101</li>
-                    <li>E102</li>
-                    <li><strong>Laboratórios de Informática</strong> (E103, 105, E107 e E109)</li>
-                    <li>E104</li>
-                    <li>E106</li>
-                    <li>E108</li>
-                    <li>E110</li>
-                    <li>E111</li>
-                    <li><strong>CAE</strong> (Coordenadoria de Apoio ao Ensino)</li>
-                    <li><strong>Coordenação de Curso</strong> (E112)</li>
-                    <li><strong>Laboratório de Práticas Corporais</strong> (E113)</li>
-                    <li><strong>Coordenadoria Sociopedagógica - CSP</strong> (E114)</li>
-                    <li><strong>Ateliê de Artes</strong> (115)</li>
-                    <li><strong>Laboratório de Ciências da Natureza</strong> (E116)</li>
-                    <li><strong>Pessoal de Apoio</strong> (E117)</li>
-                    <li>E123 <strong>(Sala de Atendimento Individual)</strong> e <strong>(Núcleo de Apoio às Pessoas com Necessidades Educacionais Específicas- NAPNE)</strong></li>
-                    <li>E124</li>
-                    <li>Sanitário Feminino 🚺</li>
-                    <li>Sanitário Feminino Acessível 🚺👩‍🦽</li>
-                    <li>Sanitário Masculino 🚹</li>
-                    <li>Sanitário Masculino Acessível 🚹👨‍🦽</li>
-                </ul>"
-            style="top:20%; left:55%; width:6.5%; height:30%; 
-                transform: rotate(45deg);">
+            data-details="<ul style='text-align: left; padding-left:35px;'><li>E101</li><li>E102</li><li><strong>Laboratórios de Informática</strong> (E103, 105, E107 e E109)</li><li>E104</li><li>E106</li><li>E108</li><li>E110</li><li>E111</li><li><strong>CAE</strong> (<strong>Coordenadoria de Apoio ao Ensino</strong>)</li><li><strong>Coordenação de Curso</strong> (E112)</li><li><strong>Laboratório de Práticas Corporais</strong> (E113)</li><li><strong>Coordenadoria Sociopedagógica - CSP</strong> (E114)</li><li><strong>Ateliê de Artes</strong> (115)</li><li><strong>Laboratório de Ciências da Natureza</strong> (E116)</li><li><strong>Pessoal de Apoio</strong> (E117)</li><li>E123 (<strong>Sala de Atendimento Individual</strong> e <strong>Núcleo de Apoio às Pessoas com Necessidades Educacionais Específicas- NAPNE</strong>)</li><li>E124</li><li>Sanitário Feminino 🚺</li><li>Sanitário Feminino Acessível 🚺👩‍🦽</li><li>Sanitário Masculino 🚹</li><li>Sanitário Masculino Acessível 🚹👨‍🦽</li></ul>"
+            data-images="img/bloco_e1.jpg, img/bloco_e2.jpg, img/bloco_e3.jpg"
+            style="top:20%; left:55%; width:6.5%; height:30%; transform: rotate(45deg);">
         </div>
 
         <div class="hotspot" 
             data-descricao="Bloco A"
-            data-details="
-                <ul style='text-align: left; padding-left:35px;'>
-                    <li><strong>Laboratório IFMAKER</strong> (A101)</li>
-                    <li><strong>Laboratório de Ações Etnico-Raciais</strong> (A102)</li>
-                    <li>A103</li>
-                    <li>A104</li>
-                    <li>A109</li>
-                    <li>A110</li>
-                    <li>A111</li>
-                    <li>A112</li>
-                    <li><strong>Depósito</strong></li>
-                    <li>Sanitário Feminino 🚺</li>
-                    <li>Sanitário Masculino 🚹</li>
-                    <li>Sanitário Feminino/Masculino Acessível 🚻🦽</li>
-                </ul>"
-            style="top:30%; left:64%; width:6%; height:14.5%; 
-                transform: rotate(45deg);">
+            data-details="<ul style='text-align: left; padding-left:35px;'><li><strong>Laboratório IFMAKER</strong> (A101)</li><li><strong>Laboratório de Ações Etnico-Raciais</strong> (A102)</li><li>A103</li><li>A104</li><li>A109</li><li>A110</li><li>A111</li><li>A112</li><li><strong>Depósito</strong></li><li>Sanitário Feminino 🚺</li><li>Sanitário Masculino 🚹</li><li>Sanitário Feminino/Masculino Acessível 🚻🦽</li></ul>"
+            data-images="img/bloco_a1.jpg, img/bloco_a2.jpg, img/bloco_a3.jpg"
+            style="top:30%; left:64%; width:6%; height:14.5%; transform: rotate(45deg);">
         </div>
 
         <div class="hotspot" 
             data-descricao="Espaço de Convivência"
-            data-details="
-                <p>Engloba:</p>
-                <ul style='text-align: left; padding-left:50px;'>
-                    <li>Microondas</li><li>Geladeiras</li><li>Sala do Grêmio</li><li>Sanitário Feminino 🚺</li><li>Sanitário Masculino 🚹</li><li>Sanitário Feminino/Masculino Acessível 🚻👨‍🦽</li>
-                </ul>"
-            style="top:50%; left:61.8%; width:6%; height:10%; 
-                transform: rotate(45deg);">
+            data-details="<p>Engloba:</p><ul style='text-align: left; padding-left:50px;'><li><strong>Microondas</li><li>Geladeiras</li><li>Sala do Grêmio</strong></li><li>Sanitário Feminino 🚺</li><li>Sanitário Masculino 🚹</li><li>Sanitário Feminino/Masculino Acessível 🚻👨‍🦽</li></ul>"
+            data-images="img/esp_conv1.jpg, img/esp_conv2.jpg, img/esp_conv3.jpg"
+            style="top:50%; left:61.8%; width:6%; height:10%; transform: rotate(45deg);">
         </div>
 
         <div class="hotspot" 
             data-descricao="Bloco B"
-            data-details="
-            <p><strong>O Bloco Industrial</strong></p>
-            <p style='text-align: left; padding-left:35px;'>Os alunos chamam de: Bloco Assombrado 😜</p>
-            <ul>
-                <li><strong>Laboratório de Eletrônica e Instrumentação</strong> (B101)</li>
-                <li>B102</li>
-                <li>B104</li>
-                <li>B105</li>
-                <li>B107</li>                    <li>B109</li>
-                <li><strong>Laboratório de Hidráulica e Pneumática</strong> (B111)</li>
-                <li>B112</li>
-                <li><strong>Laboratório de Manufatura Auxiliada por Computador e Ensaios Mecânicos</strong> (B113)</li>
-                <li>B114</li>                <li>B115</li>
-                <li>B116</li>
-                <li>B117</li>
-                <li>Sanitário Feminino 🚺</li>
-                <li>Sanitário Masculino 🚹</li>
-                <li>Sanitário Feminino/Masculino Acessível 🚻🦽</li>
-            </ul>"
-            style="top:23.5%; left:76%; width:6.8%; height:18%; 
-                transform: rotate(45deg);">
+            data-details="<p style='text-align: left; padding-left:35px;'><strong>O Bloco Industrial</strong></p><p style='text-align: center;'>Os alunos chamam de 'Bloco Assombrado' 😜</p><ul style='text-align: left; padding-left:50px;'><li><strong>Laboratório de Eletrônica e Instrumentação</strong> (B101)</li><li>B102</li><li>B104</li><li>B105</li><li>B107</li><li>B109</li><li><strong>Laboratório de Hidráulica e Pneumática</strong> (B111)</li><li>B112</li><li><strong>Laboratório de Manufatura Auxiliada por Computador e Ensaios Mecânicos</strong> (B113)</li><li>B114</li><li>B115</li><li>B116</li><li>B117</li><li>Sanitário Feminino 🚺</li><li>Sanitário Masculino 🚹</li><li>Sanitário Feminino/Masculino Acessível 🚻🦽</li></ul>"
+            data-images="img/bloco_b1.jpg, img/bloco_b2.jpg, img/bloco_b3.jpg, img/bloco_b4.jpg"
+            style="top:23.5%; left:76%; width:6.8%; height:18%; transform: rotate(45deg);">
         </div>
 
         <div class="hotspot" 
             data-descricao="Bloco D"
-            data-details="
-            <p>Engloba:</p>
-            <ul>
-                <li><strong>Laboratório de Educação Matemática - LEM</strong> (D101)</li>
-                <li><strong>Laboratório Didático de Física</strong> (D102)</li>
-                <li><strong>Laboratório Multidisciplinar de Física e Astronomia</strong> (D103)</li>
-                <li><strong>Laboratório Interdisciplinar de Formação de Educadores em Nanociência e Nanotecnologia - LIFENano</strong> (D104)</li>
-                <li>D106 <strong>(Laboratório de Microscopia de Força Atômica)</strong> e <strong>(Laboratório de Simulação e Modelagem de Nanomateriais)</strong></li>                    <li><strong>Laboratório de Síntese, Caracterização e Modelagem de Materiais - SCaM/CNPq</strong></li>
-                <li><strong>Laboratório de Preparação de Amostras</strong> (D110)</li>
-                <li>D111</li>
-                <li>D112</li>
-                <li>D113</li>
-                <li>D114</li>
-                <li>D115 <strong>(Laboratório Avançado de Sistemas Embarcados e Robótica- LASER)</strong> e <strong>(Laboratório de Projetos Aplicados à Inovação- CATI)</strong></li>                    <li>D116</li>
-                <li>D117</li>
-                <li><strong>CRAS</strong></li>
-                <li>Sanitário Feminino 🚺</li>
-                <li>Sanitário Masculino 🚹</li>
-                <li>Sanitário Feminino/Masculino Acessível 🚻🦽</li>
-            </ul>"
-            style="top:32%; left:82%; width:6%; height:19%; 
-                transform: rotate(45deg);">
+            data-details="<p>Engloba:</p><ul style='text-align: left; padding-left:50px;'><li><strong>Laboratório de Educação Matemática - LEM</strong> (D101)</li><li><strong>Laboratório Didático de Física</strong> (D102)</li><li><strong>Laboratório Multidisciplinar de Física e Astronomia</strong> (D103)</li><li><strong>Laboratório Interdisciplinar de Formação de Educadores em Nanociência e Nanotecnologia - LIFENano</strong> (D104)</li><li>D106 (<strong>Laboratório de Microscopia de Força Atômica</strong> e <strong>Laboratório de Simulação e Modelagem de Nanomateriais</strong>)</li><li><strong>Laboratório de Síntese, Caracterização e Modelagem de Materiais - SCaM/CNPq</strong></li><li><strong>Laboratório de Preparação de Amostras</strong> (D110)</li><li>D111</li><li>D112</li><li>D113</li><li>D114</li><li>D115 (<strong>Laboratório Avançado de Sistemas Embarcados e Robótica- LASER</strong> e <strong>Laboratório de Projetos Aplicados à Inovação- CATI</strong>)</li><li>D116</li><li>D117</li><li><strong>CRAS</strong></li><li>Sanitário Feminino 🚺</li><li>Sanitário Masculino 🚹</li><li>Sanitário Feminino/Masculino Acessível 🚻🦽</li></ul>"
+            data-images="img/bloco_d1.jpg, img/bloco_d2.jpg"
+            style="top:32%; left:82%; width:6%; height:19%; transform: rotate(45deg);">
         </div>
 
         <div class="hotspot" 
             data-descricao="Bloco C"
-            data-details="
-            <p>Engloba:</p>
-            <ul style='text-align: left; padding-left:30px;'>
-                <li><strong>Auditório</strong></li>
-                <li>C108</li>
-                <li>C106</li>
-                <li>C104</li>
-                <li>C110</li>
-                <li><strong>Laboratório de EAD - Studio Lab</strong></li>
-                <li><strong>Labsol (Laboratório de empreendimentos econômicos)</strong></li>
-                <li><strong>Biblioteca</strong></li>
-                <li>Sanitário Feminino 🚺</li>
-                <li>Sanitário Masculino 🚹</li>
-                <li>Sanitário Feminino/Masculino Acessível 🚻🦽</li>
-            </ul>"
-            style="top:47%; left:73%; width:6.5%; height:13%; 
-                transform: rotate(45deg);">
+            data-details="<p>Engloba:</p><ul style='text-align: left; padding-left:30px;'><li><strong>Auditório</strong></li><li>C108</li><li>C106</li><li>C104</li><li>C110</li><li><strong>Laboratório de EAD - Studio Lab</strong></li><li><strong>Labsol (Laboratório de empreendimentos econômicos)</strong></li><li><strong>Biblioteca</strong></li><li>Sanitário Feminino 🚺</li><li>Sanitário Masculino 🚹</li><li>Sanitário Feminino/Masculino Acessível 🚻🦽</li></ul>"
+            data-images="img/bloco_c1.jpg, img/bloco_c2.jpg, img/bloco_c3.jpg, img/bloco_c4.jpg"
+            style="top:47%; left:73%; width:6.5%; height:13%; transform: rotate(45deg);">
         </div>
     </div>
     
     <div id="info-box"></div>
-    
-    <script src="script.js"></script>
 
     <!-- Modal de Informações -->
-    <div id="info-modal" 
-        style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.8); color: white; padding: 20px; border-radius: 10px; max-width: 80%; z-index: 1000; border: 2px solid #4CAF50;">
-        <h3 id="modal-title" style="margin-top: 0;"></h3>
-        <div id="modal-content"></div>
-        <button id="close-modal" style="margin-top: 15px; padding: 5px 15px; background: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Fechar</button>
+    <div id="info-modal">
+        <div class="modal-header">
+            <h3 id="modal-title"></h3>
+        </div>
+        <div class="modal-content">
+            <div class="carousel-container">
+                <div class="image-carousel">
+                    <!-- Imagens serão inseridas dinamicamente pelo JavaScript -->
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-prev" aria-label="Imagem anterior">❮</button>
+                    <button class="carousel-next" aria-label="Próxima imagem">❯</button>
+                </div>
+            </div>
+            <div class="text-content" id="modal-text"></div>
+        </div>
+        <button id="close-modal">Fechar</button>
     </div>
 
-    <div id="modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 999;"></div>
+    <div id="modal-overlay"></div>
 
     <div class="quadro">
-        <h3 style="font-size: x-large">Lista de avisos:</h3>
-    
-        <ul id="avisos-lista" style="list-style-type: none; padding: center; font-size: large;">
-            <li>▶Verifique se você já terminou seu cadastro para criar seu <strong>e-mail institucional;</strong>.</li>
-            <li>▶<strong>As aulas de tarde começam às 13h30</strong> (no SUAP está atrasado);</li>
-            <li>▶Verifique o calendário de aulas, <strong>existem sábados letivos</strong>;</li>
-            <li>▶Cada professor tem sua própria maneira de mandar os <strong>materiais de aula</strong>, por exemplo (para os alunos de Engenharia de Computação do primeiro semestre de 2025):</li>
-            <ul>
-                <li>A professora Lívia, de cálculo, disponibiliza os slides que usa em suas aulas no SUAP;</li>
-                <li>A professora Natália, de química, disponibiliza os slides que usa em suas aulas no MOODLE.</li>
+        <h3>Lista de avisos:</h3>
+        <ul id="avisos-lista">
+            <li>Verifique se você já terminou seu cadastro para criar seu <strong>e-mail institucional;</strong>.</li>
+            <li><strong>As aulas de tarde começam às 13h30</strong> (no SUAP está atrasado);</li>
+            <li>Verifique o calendário de aulas, <strong>existem sábados letivos</strong>;</li>
+            <li>Cada professor tem sua própria maneira de mandar os <strong>materiais de aula</strong>, por exemplo (para os alunos de Engenharia de Computação do primeiro semestre de 2025):</li>
+            <ul style='text-align: left; padding-left:50px; list-style-type: none;'>
+                <li>A professora Lívia, de cálculo, disponibiliza os slides que usa em suas aulas no <strong>SUAP</strong>;</li>
+                <li>A professora Natália, de química, disponibiliza os slides que usa em suas aulas no <strong>MOODLE</strong>.</li>
             </ul>
-            <li>▶Para logar no wifi institucional, coloque seu <strong>BI</strong> completo com "bi" minúsculo. Caso não funcione, verifique em uma das salas de informática se seu BI está registrado no sistema do seu câmpus.</li>
-            <li>▶A frequência (presença) <strong>mínima</strong> para aprovação nas disciplinas (por semestre) é: 75%</li>
+            <li>Para logar no wifi institucional, coloque seu <strong>BI</strong> completo com "bi" totalmente minúsculo ou maiúsculo. Caso não funcione, verifique em uma das salas de informática se seu BI está registrado no sistema do seu câmpus.</li>
+            <li>A <strong>frequência</strong> (presença) <strong>mínima</strong> para aprovação nas disciplinas (por semestre) é: <strong>75%</strong></li>
         </ul>
     </div>
+    
+    <footer></footer>
+    <script src="script.js"></script>
 </body>
 </html>
